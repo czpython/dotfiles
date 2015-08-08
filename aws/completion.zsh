@@ -1,0 +1,1 @@
+source /usr/local/Cellar/awscli/1.7.33/share/zsh/site-functions/_aws
