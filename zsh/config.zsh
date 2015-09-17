@@ -46,3 +46,21 @@ bindkey "$terminfo[kcuu1]" history-beginning-search-backward
 bindkey "$terminfo[kcud1]" history-beginning-search-forward
 
 source /usr/local/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+
+# Fix Keypad Mappings
+bindkey -s "^[Op" "0"
+bindkey -s "^[Ol" "."
+bindkey -s "^[OM" "^M" # Enter
+bindkey -s "^[Oq" "1"
+bindkey -s "^[Or" "2"
+bindkey -s "^[Os" "3"
+bindkey -s "^[Ot" "4"
+bindkey -s "^[Ou" "5"
+bindkey -s "^[Ov" "6"
+bindkey -s "^[Ow" "7"
+bindkey -s "^[Ox" "8"
+bindkey -s "^[Oy" "9"
+bindkey -s "^[Ok" "+"
+bindkey -s "^[Om" "-"
+bindkey -s "^[Oj" "*"
+bindkey -s "^[Oo" "/"

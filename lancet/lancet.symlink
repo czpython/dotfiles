@@ -1,6 +1,7 @@
 [tracker]
 url = https://divio-ch.atlassian.net
 username = Chive
+default_project = ALDRYN
 
 [harvest]
 url = https://divio.harvestapp.com

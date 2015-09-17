@@ -1,0 +1,14 @@
+# Generate .travis.yml from .tox file
+# courtesy of https://www.dominicrodger.com/tox-and-travis.html
+
+from tox.config import parseconfig
+
+print 'language: python'
+print 'python: 2.7'
+print 'env:'
+for env in parseconfig().envlist:
+    print '  - TOX_ENV=%s' % env
+print 'install:'
+print '  - pip install tox'
+print 'script:'
+print '  - tox -e $TOX_ENV'

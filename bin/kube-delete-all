@@ -1,0 +1,4 @@
+#!/bin/sh
+kubectl delete service `kubectl get services | grep -v kubernetes | grep -v NAME | awk '{print $1}'`
+kubectl delete rc `kubectl get rc | grep -v CONTROLLER | awk '{print $1}'`
+kubectl delete pods `kubectl get pods | grep -v NAME | awk '{print $1}'`
