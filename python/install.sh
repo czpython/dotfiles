@@ -1,5 +1,5 @@
 # Install global packages
-PIP_REQUIRE_VIRTUALENV=false /usr/local/bin/pip install --upgrade distribute virtualenv pip ipython
+PIP_REQUIRE_VIRTUALENV=false /usr/local/bin/pip install --upgrade distribute virtualenv pip
 
 # Set up pipsi
 
@@ -15,7 +15,7 @@ else
 fi
 
 # Install Apps
-for app in dockertools aldryn-client pep8 devpi-client cookiecutter
+for app in ipython aldryn-client pep8 devpi-client
 do
   ~/.local/bin/pipsi install $app
 done

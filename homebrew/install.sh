@@ -20,23 +20,15 @@ fi
 # Install homebrew packages
 
 # Utils
-brew install coreutils  # GNU coreutils
-brew install grc  # shell colouriser
-brew install spark  # spark lines in shell: $ spark 0 30 55 80 33 150 => ▁▂▃▅▂▇
 brew install ack  # better grep
 brew install autojump  # jump to directories
-brew install thefuck  # correct incorrectly spelled commands
 brew install wget
 brew install zsh zsh-syntax-highlighting
 brew install gist
 brew install libgit2 --with-libssh2
-brew install jq
 
 # Development
-brew install \
-	python python3 \
-	redis solr \
-	git hub
+brew install redis
 
 # postgresql
 brew install postgresql
@@ -45,10 +37,6 @@ ln -sfv /usr/local/opt/postgresql/*.plist ~/Library/LaunchAgents
 # gettext
 brew install gettext
 brew link gettext --force
-
-# Network Pentest
-brew install aircrack-ng nmap
-
 
 # Cleanup
 brew cleanup
